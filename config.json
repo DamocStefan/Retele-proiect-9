@@ -1,0 +1,14 @@
+{
+  "portLocal": 8001,
+  "noduriProximitate": [
+    "127.0.0.1:8002",
+    "127.0.0.1:80010"
+  ],
+  "servicii": [
+    {
+      "numeService": "Calculator",
+      "startCmd": "calc",
+      "stopCmd": "taskkill /IM calculator.exe /F"
+    }
+  ]
+}
