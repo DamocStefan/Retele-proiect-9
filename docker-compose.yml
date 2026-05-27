@@ -1,0 +1,30 @@
+services:
+  nod1:
+    build: .
+    container_name: nod1
+    environment:
+      - CONFIG_FILE=config_nod1.json
+    ports:
+      - "8001:8001"
+    stdin_open: true
+    tty: true
+
+  nod2:
+    build: .
+    container_name: nod2
+    environment:
+      - CONFIG_FILE=config_nod2.json
+    ports:
+      - "8002:8002"
+    stdin_open: true
+    tty: true
+
+  nod3:
+    build: .
+    container_name: nod3
+    environment:
+      - CONFIG_FILE=config_nod3.json
+    ports:
+      - "8003:8003"
+    stdin_open: true
+    tty: true
