@@ -1,0 +1,19 @@
+{
+  "portLocal": 8002,
+  "noduriProximitate": [
+    "nod1:8001",
+    "nod3:8003"
+  ],
+  "servicii": [
+    {
+      "numeService": "Nginx",
+      "startCmd": "nginx",
+      "stopCmd": "nginx -s stop"
+    },
+    {
+      "numeService": "HttpServer",
+      "startCmd": "python3 -m http.server 9000 &",
+      "stopCmd": "pkill -f 'http.server 9000'"
+    }
+  ]
+}
