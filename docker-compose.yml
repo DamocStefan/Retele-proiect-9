@@ -5,7 +5,7 @@ services:
     environment:
       - CONFIG_FILE=config_nod1.json
     ports:
-      - "8001:8001"
+      - "8804:8804"
     stdin_open: true
     tty: true
 
@@ -15,7 +15,7 @@ services:
     environment:
       - CONFIG_FILE=config_nod2.json
     ports:
-      - "8002:8002"
+      - "8808:8808"
     stdin_open: true
     tty: true
 
@@ -25,6 +25,6 @@ services:
     environment:
       - CONFIG_FILE=config_nod3.json
     ports:
-      - "8003:8003"
+      - "8814:8814"
     stdin_open: true
     tty: true
