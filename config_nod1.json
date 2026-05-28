@@ -1,8 +1,8 @@
 {
   "portLocal": 8001,
   "noduriProximitate": [
-    "nod2:8002",
-    "nod3:8003"
+    "nod2:8808",
+    "nod3:8814"
   ],
   "servicii": [
     {
